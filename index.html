@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PITBULL MEDIA | Ultra HD Cloud Streaming, Multi-Device Connections & High-Speed Media Access</title>
+  <meta name="description" content="Pitbull Media delivers enterprise-grade 4K ultra-high-definition cloud streaming, seamless multi-connection access across Android, Firestick, iOS, Samsung, LG, and Roku with 99.9% uptime.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/images/favicon.jpg">
+
+  <!-- Three.js for 3D Interactive Canvas & Rotations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===================================================================
+       STICKY NAVIGATION BAR
+       =================================================================== -->
+  <nav class="navbar" id="main-navbar" aria-label="Main Navigation">
+    <div class="container nav-container">
+      
+      <!-- Brand Logo & Name -->
+      <a href="#home" class="brand-logo" aria-label="PITBULL MEDIA Home">
+        <div class="brand-logo-frame">
+          <img src="assets/images/pitbull-media-logo.jpg" alt="PITBULL MEDIA Logo" class="brand-logo-img">
+        </div>
+        <div class="brand-text">
+          <div class="brand-name">PITBULL <span>MEDIA</span></div>
+          <div class="brand-tagline">ULTRA CLOUD STREAM NETWORK</div>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu (Compliant, High-Impact Labels) -->
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link active">STREAM HUB</a></li>
+        <li><a href="#devices" class="nav-link">DEVICES</a></li>
+        <li><a href="#pricing" class="nav-link">CONNECTIONS & PRICES</a></li>
+        <li><a href="#about" class="nav-link">ABOUT US</a></li>
+        <li><a href="#reviews" class="nav-link">REVIEWS</a></li>
+        <li><a href="#contact" class="nav-link">CONTACT</a></li>
+      </ul>
+
+      <!-- Navbar Action Button -->
+      <div class="nav-actions">
+        <a href="#pricing" class="btn btn-primary btn-sm">ORDER ACCESS</a>
+      </div>
+
+      <!-- Hamburger Menu for Mobile -->
+      <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer Navigation -->
+  <div class="mobile-nav-overlay" id="mobile-overlay"></div>
+  <div class="mobile-nav-drawer" id="mobile-drawer">
+    <div>
+      <div class="brand-logo" style="margin-bottom: 24px;">
+        <div class="brand-logo-frame">
+          <img src="assets/images/pitbull-media-logo.jpg" alt="PITBULL MEDIA Logo" class="brand-logo-img">
+        </div>
+        <div class="brand-text">
+          <div class="brand-name">PITBULL <span>MEDIA</span></div>
+          <div class="brand-tagline">ULTRA CLOUD STREAM NETWORK</div>
+        </div>
+      </div>
+      <ul class="mobile-menu-list">
+        <li><a href="#home" class="mobile-nav-link active">STREAM HUB (HOME)</a></li>
+        <li><a href="#devices" class="mobile-nav-link">DEVICES</a></li>
+        <li><a href="#pricing" class="mobile-nav-link">CONNECTIONS & PRICES</a></li>
+        <li><a href="#about" class="mobile-nav-link">ABOUT US</a></li>
+        <li><a href="#reviews" class="mobile-nav-link">REVIEWS</a></li>
+        <li><a href="#contact" class="mobile-nav-link">CONTACT</a></li>
+      </ul>
+    </div>
+    <div>
+      <a href="#pricing" class="btn btn-primary btn-block">ORDER ACCESS NOW</a>
+      <div style="margin-top: 14px; text-align: center; font-size: 0.75rem; color: var(--text-muted);">
+        Enterprise Media Cloud Infrastructure
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       HERO SECTION: STREAM HUB (3D INTERACTIVE CANVAS & ROTATIONS)
+       =================================================================== -->
+  <section class="hero-section" id="home">
+    <!-- 3D Three.js Interactive WebGL Canvas -->
+    <canvas id="threejs-hero-canvas"></canvas>
+    <div class="hero-grid-bg"></div>
+
+    <div class="container hero-content">
+      <div class="hero-grid">
+        
+        <!-- Left Column: Headline, Description & CTAs -->
+        <div class="hero-text-col">
+          <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            Global High-Speed Cloud Media Feeds • 99.9% Uptime
+          </div>
+
+          <h1 class="hero-title">
+            Unrivaled 4K Ultra HD Streaming Built for <span>Pure Performance</span>
+          </h1>
+
+          <p class="hero-description">
+            Experience lightning-fast cloud media delivery across all your smart devices. Buffer-free, anti-freeze technology with dedicated simultaneous connections engineered for uncompromising viewers.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#pricing" class="btn btn-primary btn-lg">VIEW CONNECTIONS & PRICES</a>
+            <a href="#devices" class="btn btn-secondary btn-lg">COMPATIBLE DEVICES</a>
+          </div>
+
+          <!-- Quick Statistics -->
+          <div class="hero-stats-bar">
+            <div class="hero-stat-item">
+              <span class="hero-stat-num">4K <span>60FPS</span></span>
+              <span class="hero-stat-label">Ultra HD Bitrate</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="hero-stat-num">99.9<span>%</span></span>
+              <span class="hero-stat-label">Network Reliability</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="hero-stat-num">1-3 <span>CNX</span></span>
+              <span class="hero-stat-label">Concurrent Screens</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: 3D Smart TV Device Mockup with Real-Time Interactive Rotations -->
+        <div class="hero-visual-col">
+          <div class="hero-3d-screen-wrapper">
+            
+            <!-- Floating 3D Badge Top Right -->
+            <div class="floating-3d-badge floating-badge-1">
+              <div class="badge-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polygon points="5 3 19 12 5 21 5 3"/>
+                </svg>
+              </div>
+              <div class="badge-content">
+                <h5>Next-Gen 3D Feeds</h5>
+                <p>Zero Buffering Cloud Core</p>
+              </div>
+            </div>
+
+            <!-- TV Screen Frame with Interactive 3D Physics Tilt & Specular Glare -->
+            <div class="tv-device-frame tilt-card">
+              <div class="tv-screen-glass">
+                <img src="assets/images/pitbull-media-logo.jpg" alt="PITBULL MEDIA 3D Ultra HD Screen Interface" id="hero-tv-img">
+                <div class="tv-glare-overlay"></div>
+              </div>
+              <div class="tv-stand-base"></div>
+            </div>
+
+            <!-- Floating 3D Badge Bottom Left -->
+            <div class="floating-3d-badge floating-badge-2">
+              <div class="badge-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+              </div>
+              <div class="badge-content">
+                <h5>Multi-Room Sync</h5>
+                <p>1 to 3 Active Connections</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       VALUE HIGHLIGHTS TICKER
+       =================================================================== -->
+  <section class="value-bar" aria-label="Network Highlights">
+    <div class="container">
+      <div class="value-grid">
+        
+        <div class="value-card tilt-card">
+          <div class="value-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="7" width="20" height="15" rx="2" ry="2"/>
+              <polyline points="17 2 12 7 7 2"/>
+            </svg>
+          </div>
+          <div class="value-info">
+            <h5>Multi-Screen Streaming</h5>
+            <p>1, 2 or 3 simultaneous connections</p>
+          </div>
+        </div>
+
+        <div class="value-card tilt-card">
+          <div class="value-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+            </svg>
+          </div>
+          <div class="value-info">
+            <h5>Anti-Freeze Relay</h5>
+            <p>High-throughput stable bandwidth</p>
+          </div>
+        </div>
+
+        <div class="value-card tilt-card">
+          <div class="value-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+              <line x1="12" y1="18" x2="12.01" y2="18"/>
+            </svg>
+          </div>
+          <div class="value-info">
+            <h5>Universal Device Support</h5>
+            <p>Android, Firestick, iOS, Smart TVs & Roku</p>
+          </div>
+        </div>
+
+        <div class="value-card tilt-card">
+          <div class="value-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <div class="value-info">
+            <h5>Instant 5-Min Setup</h5>
+            <p>Fast activation upon order completion</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       DEVICES SECTION
+       (Interactive Filter: Android, Firestick, iOS, Samsung, LG, Roku & More)
+       =================================================================== -->
+  <section class="section section-alt" id="devices">
+    <div class="container">
+      
+      <div class="section-header">
+        <div class="section-tag">Cross-Platform Compatibility</div>
+        <h2 class="section-title">Supported <span>Streaming Devices</span></h2>
+        <p class="section-subtitle">
+          Pitbull Media runs effortlessly across all leading operating systems, smart TVs, and streaming sticks. Select your device below to check compatibility and easy setup steps.
+        </p>
+      </div>
+
+      <!-- Device Filter Navigation Tabs -->
+      <div class="devices-nav-tabs">
+        <button class="device-tab-btn active" data-device-filter="all">All Devices</button>
+        <button class="device-tab-btn" data-device-filter="android">1. Android</button>
+        <button class="device-tab-btn" data-device-filter="firestick">2. Firestick Devices</button>
+        <button class="device-tab-btn" data-device-filter="ios">3. iOS & Apple</button>
+        <button class="device-tab-btn" data-device-filter="samsung">4. Samsung Smart TV</button>
+        <button class="device-tab-btn" data-device-filter="lg">5. LG webOS</button>
+        <button class="device-tab-btn" data-device-filter="roku">6. Roku & More</button>
+      </div>
+
+      <!-- Devices Cards Grid -->
+      <div class="devices-grid">
+        
+        <!-- DEVICE 1: ANDROID -->
+        <div class="device-card tilt-card" data-device-category="android">
+          <div>
+            <div class="device-card-header">
+              <div class="device-icon-box">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.551 0 .9993.4482.9993.9993.0001.5511-.4482.9997-.9993.9997m-11.046 0c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.5511 0 .9993.4482.9993.9993 0 .5511-.4482.9997-.9993.9997m11.4045-6.02l1.9973-3.4592a.416.416 0 00-.1521-.5676.416.416 0 00-.5676.1521l-2.0223 3.503C15.5902 8.4116 13.8533 8.125 12 8.125c-1.8533 0-3.5902.2866-5.1368.8247L4.8409 5.4467a.4161.4161 0 00-.5677-.1521.4157.4157 0 00-.1521.5676l1.9973 3.4592C2.6889 11.1867.3432 14.6589 0 18.7773h24c-.3432-4.1184-2.6889-7.5906-6.1185-9.4559"/>
+                </svg>
+              </div>
+              <span class="device-badge-speed">Instant Setup</span>
+            </div>
+
+            <h3 class="device-card-title">1. Android Devices</h3>
+            <p class="device-card-desc">
+              Native high-performance compatibility across Android TV boxes, NVIDIA Shield, Google TV, Android tablets, and smartphones.
+            </p>
+
+            <div class="device-apps-tag-row">
+              <span class="device-apps-label">Recommended Players</span>
+              <div class="device-apps-chips">
+                <span class="app-chip">TiviMate</span>
+                <span class="app-chip">XC Player Pro</span>
+                <span class="app-chip">Smarters Pro</span>
+                <span class="app-chip">Downloader</span>
+              </div>
+            </div>
+
+            <!-- 3 Setup Steps -->
+            <div class="device-steps-list">
+              <div class="device-step-item">
+                <span class="device-step-num">1</span>
+                <span class="device-step-text">Download and install any compatible player app from Google Play or via Downloader.</span>
+              </div>
+              <div class="device-step-item">
+                <span class="device-step-num">2</span>
+                <span class="device-step-text">Enter your Pitbull Media line credentials or Portal URL provided upon order.</span>
+              </div>
+              <div class="device-step-item">
+                <span class="device-step-num">3</span>
+                <span class="device-step-text">Launch your preferred stream and enjoy smooth, bufferless 4K resolution.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="device-card-footer">
+            <a href="#pricing" class="btn btn-outline-red btn-block">Order Android Connection</a>
+          </div>
+        </div>
+
+        <!-- DEVICE 2: FIRESTICK -->
+        <div class="device-card tilt-card" data-device-category="firestick">
+          <div>
+            <div class="device-card-header">
+              <div class="device-icon-box">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="6" width="20" height="12" rx="3"/>
+                  <line x1="6" y1="12" x2="6.01" y2="12"/>
+                  <line x1="10" y1="12" x2="10.01" y2="12"/>
+                  <line x1="18" y1="9" x2="18" y2="15"/>
+                </svg>
+              </div>
+              <span class="device-badge-speed">Most Popular</span>
+            </div>
+
+            <h3 class="device-card-title">2. Firestick Devices</h3>
+            <p class="device-card-desc">
+              Engineered specifically for Amazon Fire TV Stick (4K, 4K Max, Lite, HD) and Fire TV Cube with lightning-fast remote responsiveness.
+            </p>
+
+            <div class="device-apps-tag-row">
+              <span class="device-apps-label">Recommended Players</span>
+              <div class="device-apps-chips">
+                <span class="app-chip">Downloader App</span>
+                <span class="app-chip">Smarters Pro</span>
+                <span class="app-chip">IBO Player Pro</span>
+                <span class="app-chip">TiviMate</span>
+              </div>
+            </div>
+
+            <div class="device-steps-list">
+              <div class="device-step-item">
+                <span class="device-step-num">1</span>
+                <span class="device-step-text">Install the official Downloader app from the Amazon Appstore.</span>
+              </div>
+              <div class="device-step-item">
+                <span class="device-step-num">2</span>
+                <span class="device-step-text">Enter our quick download code or input your Pitbull Media credentials.</span>
+              </div>
+              <div class="device-step-item">
+                <span class="device-step-num">3</span>
+                <span class="device-step-text">Experience crystal-clear streaming with 60fps high-bitrate output.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="device-card-footer">
+            <a href="#pricing" class="btn btn-outline-red btn-block">Order Firestick Connection</a>
+          </div>
+        </div>
+
+        <!-- DEVICE 3: IOS -->
+        <div class="device-card tilt-card" data-device-category="ios">
+          <div>
+            <div class="device-card-header">
+              <div class="device-icon-box">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.88c.64-.78 1.08-1.86.96-2.88-.93.04-2.05.62-2.72 1.4-.59.68-1.11 1.77-.97 2.81 1.04.08 2.09-.55 2.73-1.33z"/>
+                </svg>
+              </div>
+              <span class="device-badge-speed">Retina 4K Support</span>
+            </div>
+
+            <h3 class="device-card-title">3. iOS & Apple Devices</h3>
+            <p class="device-card-desc">
+              Silky smooth playback on iPhone, iPad, Macbooks, and Apple TV 4K (tvOS) using top-rated App Store media players.
+            </p>
+
+            <div class="device-apps-tag-row">
+              <span class="device-apps-label">Recommended Players</span>
+              <div class="device-apps-chips">
+                <span class="app-chip">Smarters Player Lite</span>
+                <span class="app-chip">GSE Smart</span>
+                <span class="app-chip">IBO Player</span>
+                <span class="app-chip">Snappiers</span>
+              </div>
+            </div>
+
+            <div class="device-steps-list">
+              <div class="device-step-item">
+                <span class="device-step-num">1</span>
+                <span class="device-step-text">Open the Apple App Store and download your preferred media player.</span>
+              </div>
+              <div class="device-step-item">
+                <span class="device-step-num">2</span>
+                <span class="device-step-text">Input your secure Pitbull Media server connection and user access key.</span>
+              </div>
+              <div class="device-step-item">
+                <span class="device-step-num">3</span>
+                <span class="device-step-text">Enjoy flawless AirPlay integration and HDR media streaming.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="device-card-footer">
+            <a href="#pricing" class="btn btn-outline-red btn-block">Order iOS Connection</a>
+          </div>
+        </div>
+
+        <!-- DEVICE 4: SAMSUNG -->
+        <div class="device-card tilt-card" data-device-category="samsung">
+          <div>
+            <div class="device-card-header">
+              <div class="device-icon-box">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                  <line x1="8" y1="21" x2="16" y2="21"/>
+                  <line x1="12" y1="17" x2="12" y2="21"/>
+                </svg>
+              </div>
+              <span class="device-badge-speed">Tizen OS Ready</span>
+            </div>
+
+            <h3 class="device-card-title">4. Samsung Smart TV</h3>
+            <p class="device-card-desc">
+              Direct integration with Samsung Tizen Smart TVs (QLED, Neo QLED, Crystal UHD) with no external boxes required.
+            </p>
+
+            <div class="device-apps-tag-row">
+              <span class="device-apps-label">Recommended Players</span>
+              <div class="device-apps-chips">
+                <span class="app-chip">IBO Player</span>
+                <span class="app-chip">Smart STB</span>
+                <span class="app-chip">Smart Stream Pro</span>
+                <span class="app-chip">Media Player Pro</span>
+              </div>
+            </div>
+
+            <div class="device-steps-list">
+              <div class="device-step-item">
+                <span class="device-step-num">1</span>
+                <span class="device-step-text">Navigate to the Samsung Apps Hub and download IBO Player or Smart STB.</span>
+              </div>
+              <div class="device-step-item">
+                <span class="device-step-num">2</span>
+                <span class="device-step-text">Provide us your TV MAC address or login using your Pitbull Media access code.</span>
+              </div>
+              <div class="device-step-item">
+                <span class="device-step-num">3</span>
+                <span class="device-step-text">Stream directly with your Samsung TV remote control.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="device-card-footer">
+            <a href="#pricing" class="btn btn-outline-red btn-block">Order Samsung Connection</a>
+          </div>
+        </div>
+
+        <!-- DEVICE 5: LG WEBOS -->
+        <div class="device-card tilt-card" data-device-category="lg">
+          <div>
+            <div class="device-card-header">
+              <div class="device-icon-box">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="M12 6v6l4 2"/>
+                </svg>
+              </div>
+              <span class="device-badge-speed">webOS 4.0 - 24+</span>
+            </div>
+
+            <h3 class="device-card-title">5. LG Smart TV (webOS)</h3>
+            <p class="device-card-desc">
+              Optimized for LG OLED, QNED, and NanoCell screens with Magic Remote pointer support and ultra-crisp audio passthrough.
+            </p>
+
+            <div class="device-apps-tag-row">
+              <span class="device-apps-label">Recommended Players</span>
+              <div class="device-apps-chips">
+                <span class="app-chip">IBO Player Pro</span>
+                <span class="app-chip">Smartone Player</span>
+                <span class="app-chip">Smart Stream</span>
+                <span class="app-chip">Flix Player</span>
+              </div>
+            </div>
+
+            <div class="device-steps-list">
+              <div class="device-step-item">
+                <span class="device-step-num">1</span>
+                <span class="device-step-text">Open the LG Content Store and search for IBO Player or Smartone.</span>
+              </div>
+              <div class="device-step-item">
+                <span class="device-step-num">2</span>
+                <span class="device-step-text">Upload your Pitbull Media playlist URL or line details to activate.</span>
+              </div>
+              <div class="device-step-item">
+                <span class="device-step-num">3</span>
+                <span class="device-step-text">Enjoy flawless Dolby Audio and true 4K HDR streaming.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="device-card-footer">
+            <a href="#pricing" class="btn btn-outline-red btn-block">Order LG Connection</a>
+          </div>
+        </div>
+
+        <!-- DEVICE 6: ROKU & MORE -->
+        <div class="device-card tilt-card" data-device-category="roku">
+          <div>
+            <div class="device-card-header">
+              <div class="device-icon-box">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                  <polyline points="2 17 12 22 22 17"/>
+                  <polyline points="2 12 12 17 22 12"/>
+                </svg>
+              </div>
+              <span class="device-badge-speed">Cross-Compatible</span>
+            </div>
+
+            <h3 class="device-card-title">6. Roku & Other Platforms</h3>
+            <p class="device-card-desc">
+              Flexible setups for Roku Streaming Sticks, Roku TVs, Windows PC, macOS, Formuler boxes, MAG devices, and Enigma2 portals.
+            </p>
+
+            <div class="device-apps-tag-row">
+              <span class="device-apps-label">Recommended Players</span>
+              <div class="device-apps-chips">
+                <span class="app-chip">Web Video Caster</span>
+                <span class="app-chip">VLC Media Player</span>
+                <span class="app-chip">MyTVOnline</span>
+                <span class="app-chip">MAG Portal</span>
+              </div>
+            </div>
+
+            <div class="device-steps-list">
+              <div class="device-step-item">
+                <span class="device-step-num">1</span>
+                <span class="device-step-text">Choose your streaming app or screen-mirroring client on Roku or PC.</span>
+              </div>
+              <div class="device-step-item">
+                <span class="device-step-num">2</span>
+                <span class="device-step-text">Cast or link your Pitbull Media dedicated high-speed media stream.</span>
+              </div>
+              <div class="device-step-item">
+                <span class="device-step-num">3</span>
+                <span class="device-step-text">Instant continuous playback with full multi-audio and subtitle tracks.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="device-card-footer">
+            <a href="#pricing" class="btn btn-outline-red btn-block">Order Roku / Other Connection</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       CONNECTIONS & PRICES SECTION
+       (Durations: 1 Month, 3 Months, 6 Months, 1 Year)
+       (Under each: 1 CNX $, 2 CNX $, 3 CNX $ with ORDER BUTTON in front of each)
+       =================================================================== -->
+  <section class="section" id="pricing">
+    <div class="container">
+      
+      <div class="section-header">
+        <div class="section-tag">Flexible Subscriptions</div>
+        <h2 class="section-title">Connections & <span>Prices</span></h2>
+        <p class="section-subtitle">
+          Choose your desired duration and simultaneous connections (CNX). Every plan includes full 4K ultra-definition, anti-freeze stability, and dedicated customer support with an <strong>Order Button</strong> directly in front of each tier.
+        </p>
+      </div>
+
+      <!-- 4 High-Impact 3D Pricing Cards Grid (TV Access & Exact Prices) -->
+      <div class="pricing-cards-grid-4col">
+        
+        <!-- CARD 1: 1 MONTH (£10) -->
+        <div class="pricing-card tilt-card" data-plan="1 Month - TV (£10)">
+          <div class="pricing-header">
+            <span class="pricing-tier-tag">Monthly Pass</span>
+            <h3 class="pricing-card-title">1 MONTH</h3>
+            <p class="pricing-card-duration">Flexible monthly cloud access with zero long-term commitment.</p>
+          </div>
+
+          <div class="pricing-tv-spec-box">
+            <div class="pricing-tv-label">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="15" rx="2" ry="2"/><polyline points="17 2 12 7 7 2"/></svg>
+              <span>DEVICE</span>
+            </div>
+            <strong class="pricing-tv-target">TV</strong>
+          </div>
+
+          <div class="pricing-cost-display">
+            <span class="pricing-currency">£</span>
+            <span class="pricing-number">10</span>
+            <span class="pricing-cycle">/ 1 Month</span>
+          </div>
+
+          <a href="https://t.me/PitBullMedia" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block trigger-order-btn" data-plan="1 Month - TV (£10)" data-price="£10">
+            ORDER NOW
+          </a>
+
+          <ul class="pricing-features-list">
+            <li class="pricing-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Full 4K Ultra HD & 60fps streaming</span>
+            </li>
+            <li class="pricing-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Smart TV, Firestick, Android & Box support</span>
+            </li>
+            <li class="pricing-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Anti-Freeze server failover protection</span>
+            </li>
+            <li class="pricing-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Instant Telegram line activation</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- CARD 2: 3 MONTHS (£30) -->
+        <div class="pricing-card tilt-card" data-plan="3 Months - TV (£30)">
+          <div class="pricing-header">
+            <span class="pricing-tier-tag">Quarterly Pass</span>
+            <h3 class="pricing-card-title">3 MONTHS</h3>
+            <p class="pricing-card-duration">3 Full months of uninterrupted high-speed streaming.</p>
+          </div>
+
+          <div class="pricing-tv-spec-box">
+            <div class="pricing-tv-label">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="15" rx="2" ry="2"/><polyline points="17 2 12 7 7 2"/></svg>
+              <span>DEVICE</span>
+            </div>
+            <strong class="pricing-tv-target">TV</strong>
+          </div>
+
+          <div class="pricing-cost-display">
+            <span class="pricing-currency">£</span>
+            <span class="pricing-number">30</span>
+            <span class="pricing-cycle">/ 3 Months</span>
+          </div>
+
+          <a href="https://t.me/PitBullMedia" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block trigger-order-btn" data-plan="3 Months - TV (£30)" data-price="£30">
+            ORDER NOW
+          </a>
+
+          <ul class="pricing-features-list">
+            <li class="pricing-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>90 Days uninterrupted 4K media access</span>
+            </li>
+            <li class="pricing-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Priority cloud server routing</span>
+            </li>
+            <li class="pricing-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>EPG TV guide & multi-audio passthrough</span>
+            </li>
+            <li class="pricing-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Dedicated setup guide for your TV</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- CARD 3: 3 - 6 MONTHS (£50) -->
+        <div class="pricing-card tilt-card" data-plan="3 - 6 Months - TV (£50)">
+          <div class="pricing-header">
+            <span class="pricing-tier-tag">Extended Saver</span>
+            <h3 class="pricing-card-title">3 - 6 MONTHS</h3>
+            <p class="pricing-card-duration">Extended continuous streaming pass with discounted rate.</p>
+          </div>
+
+          <div class="pricing-tv-spec-box">
+            <div class="pricing-tv-label">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="15" rx="2" ry="2"/><polyline points="17 2 12 7 7 2"/></svg>
+              <span>DEVICE</span>
+            </div>
+            <strong class="pricing-tv-target">TV</strong>
+          </div>
+
+          <div class="pricing-cost-display">
+            <span class="pricing-currency">£</span>
+            <span class="pricing-number">50</span>
+            <span class="pricing-cycle">/ Extended</span>
+          </div>
+
+          <a href="https://t.me/PitBullMedia" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block trigger-order-btn" data-plan="3 - 6 Months - TV (£50)" data-price="£50">
+            ORDER NOW
+          </a>
+
+          <ul class="pricing-features-list">
+            <li class="pricing-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Extended continuous access with priority bandwidth</span>
+            </li>
+            <li class="pricing-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Ultra 4K & 60fps high bitrate streaming</span>
+            </li>
+            <li class="pricing-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Automatic server failover & 99.9% uptime</span>
+            </li>
+            <li class="pricing-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Priority 24/7 Telegram support desk</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- CARD 4: 1 YEAR (12 MONTHS) (£100) (BEST VALUE) -->
+        <div class="pricing-card featured tilt-card" data-plan="1 Year (12 Months) - TV (£100)">
+          <span class="popular-badge">BEST VALUE</span>
+          <div class="pricing-header">
+            <span class="pricing-tier-tag">Full Year Pass</span>
+            <h3 class="pricing-card-title">1 YEAR</h3>
+            <p class="pricing-card-duration">365 Days of top-tier 4K streaming at our lowest annual rate.</p>
+          </div>
+
+          <div class="pricing-tv-spec-box">
+            <div class="pricing-tv-label">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="15" rx="2" ry="2"/><polyline points="17 2 12 7 7 2"/></svg>
+              <span>DEVICE</span>
+            </div>
+            <strong class="pricing-tv-target">TV</strong>
+          </div>
+
+          <div class="pricing-cost-display">
+            <span class="pricing-currency">£</span>
+            <span class="pricing-number">100</span>
+            <span class="pricing-cycle">/ 12 Months</span>
+          </div>
+
+          <a href="https://t.me/PitBullMedia" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block trigger-order-btn" data-plan="1 Year (12 Months) - TV (£100)" data-price="£100">
+            ORDER NOW
+          </a>
+
+          <ul class="pricing-features-list">
+            <li class="pricing-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Full 365 Days uninterrupted service</span>
+            </li>
+            <li class="pricing-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Highest VIP server bandwidth priority</span>
+            </li>
+            <li class="pricing-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Zero buffering & anti-freeze redundancy</span>
+            </li>
+            <li class="pricing-feature-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Instant line provisioning & VIP Telegram concierge</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Need Custom Number of Connections or Extended Term? -->
+      <div class="custom-plan-box">
+        <div class="custom-plan-left">
+          <div class="custom-plan-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+          </div>
+          <div>
+            <h5>Need 4+ Connections, Extended Multi-Year Terms or Custom Setups?</h5>
+            <p>We provide tailored multi-screen solutions and dedicated private streaming relays for larger households and businesses.</p>
+          </div>
+        </div>
+        <a href="#contact" class="btn btn-secondary btn-md">Request Custom Plan</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       ABOUT US SECTION (VIOLATION-FREE, PRESTIGE STREAMING ARCHITECTURE)
+       =================================================================== -->
+  <section class="section section-alt" id="about">
+    <div class="container">
+      <div class="about-grid">
+        
+        <!-- Left: Mission & Description -->
+        <div class="about-text-col">
+          <div class="section-tag">About Pitbull Media</div>
+          <h2 class="section-title">Built for <span>High-Performance</span> Digital Entertainment</h2>
+          
+          <p class="about-lead-para">
+            Pitbull Media is an elite digital streaming network engineered to deliver buffer-free, ultra-high-definition media access directly to modern homes and multi-device households worldwide.
+          </p>
+
+          <p class="about-body-para">
+            Traditional streaming services often suffer from regional restrictions, severe bitrate compression, and constant mid-stream buffering. We solved this by developing dedicated high-throughput edge nodes and load-balanced media clusters that prioritize raw visual fidelity, 60fps frame rates, and instantaneous stream loading.
+          </p>
+
+          <p class="about-body-para">
+            Whether you connect via a Smart TV in your living room, a Firestick in your bedroom, or an iPhone and tablet on the go, our synchronized multi-connection system gives you complete freedom to enjoy your entertainment without interruption.
+          </p>
+
+          <div class="about-pillars-grid">
+            <div class="about-pillar-box">
+              <span class="about-pillar-dot"></span>
+              <span>Ultra-Low Latency Routing</span>
+            </div>
+            <div class="about-pillar-box">
+              <span class="about-pillar-dot"></span>
+              <span>Anti-Freeze Buffer Core</span>
+            </div>
+            <div class="about-pillar-box">
+              <span class="about-pillar-dot"></span>
+              <span>True 4K UHD & HDR</span>
+            </div>
+            <div class="about-pillar-box">
+              <span class="about-pillar-dot"></span>
+              <span>Multi-Room Family Sync</span>
+            </div>
+            <div class="about-pillar-box">
+              <span class="about-pillar-dot"></span>
+              <span>100% Transparent Terms</span>
+            </div>
+            <div class="about-pillar-box">
+              <span class="about-pillar-dot"></span>
+              <span>24/7 Dedicated Support</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Infrastructure Visual & Key Metrics -->
+        <div class="about-visual-card tilt-card">
+          <h4 style="font-size: 1.3rem; font-weight: 800; margin-bottom: 24px; position: relative; z-index: 2;">
+            Network Performance Standards
+          </h4>
+
+          <div class="about-stat-row">
+            <div class="about-metric-item">
+              <div class="about-metric-number">99.98%</div>
+              <div class="about-metric-desc">Service Uptime</div>
+            </div>
+            <div class="about-metric-item">
+              <div class="about-metric-number">40+</div>
+              <div class="about-metric-desc">Edge CDN Clusters</div>
+            </div>
+            <div class="about-metric-item">
+              <div class="about-metric-number">&lt; 15ms</div>
+              <div class="about-metric-desc">Zapping Response</div>
+            </div>
+            <div class="about-metric-item">
+              <div class="about-metric-number">5 Min</div>
+              <div class="about-metric-desc">Average Activation</div>
+            </div>
+          </div>
+
+          <div style="background: rgba(255, 34, 56, 0.08); border-radius: var(--radius-sm); padding: 18px; border: 1px solid var(--primary-red-border);">
+            <p style="font-size: 0.88rem; color: #E2E8F0; line-height: 1.5;">
+              <strong>The Pitbull Media Guarantee:</strong> We do not oversell bandwidth. Every active connection receives a dedicated throughput reservation to safeguard against peak-hour slowing and freezing.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       REVIEWS SECTION
+       (Customer Testimonials + Interactive 5-Star Review Form)
+       =================================================================== -->
+  <section class="section" id="reviews">
+    <div class="container">
+      
+      <div class="section-header">
+        <div class="section-tag">Subscriber Satisfaction</div>
+        <h2 class="section-title">Verified Customer <span>Reviews</span></h2>
+        <p class="section-subtitle">
+          See what our active subscribers say about our connection speeds, picture clarity, and customer service. Have you experienced Pitbull Media? Leave your review below!
+        </p>
+      </div>
+
+      <!-- Rating Summary Bar -->
+      <div class="reviews-summary-bar">
+        <div class="summary-score-group">
+          <div class="summary-score-large">4.9</div>
+          <div class="summary-stars-column">
+            <div class="stars-row" style="font-size: 1.35rem;">★★★★★</div>
+            <div class="summary-count-text">Based on 1,480+ active subscribers across all devices</div>
+          </div>
+        </div>
+        <div>
+          <a href="#submit-review-box" class="btn btn-outline-red btn-sm">Write a Customer Review</a>
+        </div>
+      </div>
+
+      <!-- Reviews Cards Grid -->
+      <div class="reviews-grid" id="reviews-grid-container">
+        
+        <!-- Review 1 -->
+        <div class="review-card tilt-card">
+          <div>
+            <div class="review-top-row">
+              <div class="review-author-info">
+                <div class="review-avatar">M</div>
+                <div>
+                  <div class="review-author-name">
+                    Marcus T.
+                    <svg class="verified-icon" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    </svg>
+                  </div>
+                  <div class="review-device-tag">Amazon Firestick 4K Max • 2 CNX Plan</div>
+                </div>
+              </div>
+              <div class="stars-row" style="font-size: 1.1rem;">★★★★★</div>
+            </div>
+            <p class="review-body-text">
+              "Best streaming decision I've made. Switched from a sluggish provider to Pitbull Media and the difference is night and day. Zero buffering during big live sports matches and the 2 simultaneous connections work great for both our TV and bedroom stick."
+            </p>
+          </div>
+          <div class="review-date-footer">
+            <span>Verified Subscriber</span>
+            <span>2 days ago</span>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-card tilt-card">
+          <div>
+            <div class="review-top-row">
+              <div class="review-author-info">
+                <div class="review-avatar">S</div>
+                <div>
+                  <div class="review-author-name">
+                    Sarah L.
+                    <svg class="verified-icon" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    </svg>
+                  </div>
+                  <div class="review-device-tag">LG OLED C3 (webOS) • 1 Year TV</div>
+                </div>
+              </div>
+              <div class="stars-row" style="font-size: 1.1rem;">★★★★★</div>
+            </div>
+            <p class="review-body-text">
+              "Setup on LG webOS took literally 4 minutes using IBO Player. The 4K picture quality is razor-sharp and the sound is phenomenal. Customer support on Telegram answered my initial inquiry in under 3 minutes. Highly recommended!"
+            </p>
+          </div>
+          <div class="review-date-footer">
+            <span>Verified Subscriber</span>
+            <span>1 week ago</span>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-card tilt-card">
+          <div>
+            <div class="review-top-row">
+              <div class="review-author-info">
+                <div class="review-avatar">D</div>
+                <div>
+                  <div class="review-author-name">
+                    David R.
+                    <svg class="verified-icon" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    </svg>
+                  </div>
+                  <div class="review-device-tag">NVIDIA Shield Android TV • 1 CNX</div>
+                </div>
+              </div>
+              <div class="stars-row" style="font-size: 1.1rem;">★★★★★</div>
+            </div>
+            <p class="review-body-text">
+              "Running on TiviMate on my Shield Pro. EPG loaded instantly, channels switch in under a second with no freezing or audio desync. Pitbull Media lives up to the reputation for raw speed."
+            </p>
+          </div>
+          <div class="review-date-footer">
+            <span>Verified Subscriber</span>
+            <span>2 weeks ago</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- =============================================================
+           INTERACTIVE 5-STAR REVIEW SUBMISSION FORM
+           ============================================================= -->
+      <div class="review-submit-card" id="submit-review-box">
+        <div class="review-submit-header">
+          <h4>Share Your Experience With Pitbull Media</h4>
+          <p>Rate our service and leave your genuine feedback. Your review will be published immediately!</p>
+        </div>
+
+        <form id="customer-review-form">
+          <!-- 5-Star Interactive Button Picker -->
+          <div class="star-rating-picker-wrapper">
+            <span class="star-rating-label">CLICK TO SELECT YOUR RATING (1 TO 5 STARS):</span>
+            <div class="star-rating-stars" id="star-picker-container">
+              <button type="button" class="star-pick-btn active" data-value="1" aria-label="1 Star">★</button>
+              <button type="button" class="star-pick-btn active" data-value="2" aria-label="2 Stars">★</button>
+              <button type="button" class="star-pick-btn active" data-value="3" aria-label="3 Stars">★</button>
+              <button type="button" class="star-pick-btn active" data-value="4" aria-label="4 Stars">★</button>
+              <button type="button" class="star-pick-btn active" data-value="5" aria-label="5 Stars">★</button>
+            </div>
+            <div class="star-rating-text-feedback" id="star-feedback-text">5 Stars - Outstanding & Blazing Fast!</div>
+          </div>
+
+          <div class="review-form-grid">
+            <div>
+              <input type="text" class="input-custom" id="review-author-name" placeholder="Your Name or Nickname" required>
+            </div>
+            <div>
+              <select class="input-custom" id="review-device-select">
+                <option value="Amazon Firestick 4K / Cube">Amazon Firestick 4K / Cube</option>
+                <option value="Android TV / Box / Google TV">Android TV / Box / Google TV</option>
+                <option value="Samsung Smart TV (Tizen)">Samsung Smart TV (Tizen)</option>
+                <option value="LG Smart TV (webOS)">LG Smart TV (webOS)</option>
+                <option value="Apple iPhone / iPad / Apple TV">Apple iPhone / iPad / Apple TV</option>
+                <option value="Roku Streaming Device">Roku Streaming Device</option>
+                <option value="Windows PC / macOS">Windows PC / macOS</option>
+                <option value="Other Streaming Device">Other Streaming Device</option>
+              </select>
+            </div>
+            <textarea class="input-custom" id="review-comment-text" placeholder="Write a short review about your streaming experience, picture quality, connection speed..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">
+            SUBMIT MY 5-STAR REVIEW
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       CONTACT & FAST DISPATCHER SECTION
+       (Official Recognizable Social Media Buttons & Instant Order Launcher)
+       =================================================================== -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      
+      <div class="section-header">
+        <div class="section-tag">Direct Communication</div>
+        <h2 class="section-title">Connect With <span>Pitbull Media</span></h2>
+        <p class="section-subtitle">
+          Need assistance setting up your device, confirming an order, or discussing a custom multi-connection plan? Reach us directly through your preferred platform.
+        </p>
+      </div>
+
+      <!-- Telegram Exclusive Official Channel Card -->
+      <div class="telegram-exclusive-wrapper">
+        <a href="https://t.me/PitBullMedia" target="_blank" rel="noopener noreferrer" class="telegram-exclusive-card tilt-card" title="Open Telegram Support">
+          <div class="telegram-logo-emblem">
+            <!-- Official Original Telegram Logo -->
+            <svg viewBox="0 0 240 240" class="telegram-original-svg" width="90" height="90">
+              <circle cx="120" cy="120" r="120" fill="#24A1DE"/>
+              <path d="M54 116.5l112.5-46.5c5.2-1.9 9.7 1.2 8 8.9l-19.1 90.1c-1.4 6.4-5.2 8-10.5 5l-29.2-21.5-14.1 13.6c-1.6 1.6-2.9 2.9-5.9 2.9l2.1-29.9 54.4-49.2c2.4-2.1-.5-3.3-3.7-1.2l-67.2 42.3-29-9.1c-6.3-2-6.4-6.3 1.7-9.4z" fill="#ffffff"/>
+            </svg>
+          </div>
+          <div class="telegram-exclusive-info">
+            <span class="telegram-status-pill"><span class="telegram-dot-pulse"></span> 24/7 DEDICATED CHANNEL</span>
+            <h3 class="telegram-handle-title">Official Telegram Desk</h3>
+            <p class="telegram-handle-desc">Direct line provisioning, instant activation, and priority setup assistance exclusively on Telegram.</p>
+            <div class="telegram-cta-button">
+              <span>CONNECT ON TELEGRAM</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Quick Inquiry Dispatcher Form (Direct to Telegram) -->
+      <div class="quick-dispatcher-card">
+        <div class="dispatcher-header">
+          <div>
+            <h4>Quick Order & Inquiry Dispatcher</h4>
+            <p style="font-size: 0.88rem; color: var(--text-secondary); margin-top: 4px;">Select your desired package to initiate an order directly via Telegram with your order details pre-formatted.</p>
+          </div>
+        </div>
+
+        <div class="dispatcher-form-row">
+          <div>
+            <select class="input-custom" id="fast-service-select" aria-label="Select Plan">
+              <option value="1 Month Pass - TV (£10)">1 Month Pass: TV (£10)</option>
+              <option value="3 Months Pass - TV (£30)">3 Months Pass: TV (£30)</option>
+              <option value="3 - 6 Months Pass - TV (£50)">3 - 6 Months Pass: TV (£50)</option>
+              <option value="1 Year (12 Months) Pass - TV (£100)" selected>1 Year (12 Months) Pass: TV (£100)</option>
+              <option value="Custom Extended TV Setup">Custom TV Setup Inquiry</option>
+            </select>
+          </div>
+
+          <div>
+            <input type="text" class="input-custom" id="fast-notes-input" placeholder="Your device (Firestick, Android, Samsung, LG...)" aria-label="Device Notes">
+          </div>
+
+          <div>
+            <button type="button" class="btn btn-primary btn-md btn-block" id="fast-send-tg">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 6px;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+              Send via Telegram
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       FOOTER
+       =================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <div class="footer-grid">
+        
+        <!-- Brand Info -->
+        <div>
+          <div class="brand-logo">
+            <div class="brand-logo-frame">
+              <img src="assets/images/pitbull-media-logo.jpg" alt="PITBULL MEDIA Logo" class="brand-logo-img">
+            </div>
+            <div class="brand-text">
+              <div class="brand-name">PITBULL <span>MEDIA</span></div>
+              <div class="brand-tagline">ULTRA CLOUD STREAM NETWORK</div>
+            </div>
+          </div>
+          <p class="footer-desc">
+            Next-generation 4K ultra-high-definition cloud streaming architecture, multi-room concurrent connections, and buffer-free digital media entertainment across all modern smart devices.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="#home">Stream Hub (Home)</a></li>
+            <li class="footer-link-item"><a href="#devices">Supported Devices</a></li>
+            <li class="footer-link-item"><a href="#pricing">Connections & Prices</a></li>
+            <li class="footer-link-item"><a href="#about">About Pitbull Media</a></li>
+            <li class="footer-link-item"><a href="#reviews">Customer Reviews</a></li>
+            <li class="footer-link-item"><a href="#contact">Direct Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Supported Devices -->
+        <div>
+          <h4 class="footer-heading">Devices</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="#devices">Android TV & Mobile</a></li>
+            <li class="footer-link-item"><a href="#devices">Amazon Firestick 4K</a></li>
+            <li class="footer-link-item"><a href="#devices">Apple iOS & Apple TV</a></li>
+            <li class="footer-link-item"><a href="#devices">Samsung Smart TVs</a></li>
+            <li class="footer-link-item"><a href="#devices">LG webOS Screens</a></li>
+            <li class="footer-link-item"><a href="#devices">Roku, PC & Formuler</a></li>
+          </ul>
+        </div>
+
+        <!-- Exclusive Official Channel -->
+        <div>
+          <h4 class="footer-heading">Official Channel</h4>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 14px; line-height: 1.5;">
+            Instant activation, custom multi-room packages, and 24/7 dedicated assistance exclusively via Telegram.
+          </p>
+          <a href="https://t.me/PitBullMedia" target="_blank" rel="noopener noreferrer" class="footer-telegram-pill" title="Join Our Official Telegram">
+            <svg viewBox="0 0 240 240" width="32" height="32" style="flex-shrink:0;">
+              <circle cx="120" cy="120" r="120" fill="#24A1DE"/>
+              <path d="M54 116.5l112.5-46.5c5.2-1.9 9.7 1.2 8 8.9l-19.1 90.1c-1.4 6.4-5.2 8-10.5 5l-29.2-21.5-14.1 13.6c-1.6 1.6-2.9 2.9-5.9 2.9l2.1-29.9 54.4-49.2c2.4-2.1-.5-3.3-3.7-1.2l-67.2 42.3-29-9.1c-6.3-2-6.4-6.3 1.7-9.4z" fill="#ffffff"/>
+            </svg>
+            <div>
+              <div style="font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px;">Direct Telegram Desk</div>
+              <strong style="color: #ffffff; font-size: 1rem;">Official Telegram Support</strong>
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; 2026 PITBULL MEDIA. All Rights Reserved.
+        </div>
+        <div style="display: flex; gap: 20px;">
+          <span>High-Bandwidth Cloud Media Infrastructure</span>
+          <span>Buffer-Free Dedicated Connections</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ===================================================================
+       SMART ORDER LIGHTBOX MODAL
+       =================================================================== -->
+  <div class="order-modal-overlay" id="order-modal" role="dialog" aria-modal="true" aria-labelledby="order-modal-title">
+    <div class="order-modal-box">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close Order Modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+
+      <div class="modal-header-section">
+        <div class="modal-logo-small">
+          <img src="assets/images/pitbull-media-logo.jpg" alt="PITBULL MEDIA" style="width:100%; height:100%; object-fit:cover;">
+        </div>
+        <h3 id="order-modal-title">Confirm Your Order</h3>
+        <p style="font-size: 0.88rem; color: var(--text-secondary);">Direct activation & setup credentials via our official Telegram channel:</p>
+        <div class="modal-plan-selected-badge" id="modal-selected-plan">
+          1 Year (12 Months) - TV (£100)
+        </div>
+      </div>
+
+      <div class="modal-actions-list">
+        <a href="https://t.me/PitBullMedia" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block" id="modal-order-tg" style="padding: 16px; font-size: 1.05rem; display: flex; align-items: center; justify-content: center; gap: 12px; text-decoration: none;">
+          <svg viewBox="0 0 240 240" width="28" height="28" style="flex-shrink:0;">
+            <circle cx="120" cy="120" r="120" fill="#24A1DE"/>
+            <path d="M54 116.5l112.5-46.5c5.2-1.9 9.7 1.2 8 8.9l-19.1 90.1c-1.4 6.4-5.2 8-10.5 5l-29.2-21.5-14.1 13.6c-1.6 1.6-2.9 2.9-5.9 2.9l2.1-29.9 54.4-49.2c2.4-2.1-.5-3.3-3.7-1.2l-67.2 42.3-29-9.1c-6.3-2-6.4-6.3 1.7-9.4z" fill="#ffffff"/>
+          </svg>
+          <span>Order Instantly on Telegram</span>
+        </a>
+      </div>
+
+      <p style="font-size: 0.75rem; color: var(--text-muted); text-align: center; margin-top: 18px;">
+        Instant setup details and instructions are sent immediately upon order confirmation.
+      </p>
+    </div>
+  </div>
+
+  <!-- Master Interactive Script -->
+  <script src="js/main.js"></script>
+</body>
+</html>
